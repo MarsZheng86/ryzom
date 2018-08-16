@@ -1,0 +1,10 @@
+FILE(GLOB SRC *.cpp *.h)
+
+ADD_EXECUTABLE(pdr_util ${SRC})
+
+TARGET_LINK_LIBRARIES(pdr_util ryzom_gameshare nelmisc nelnet nelligo nelgeorges)
+
+NL_DEFAULT_PROPS(pdr_util "Ryzom, Tools: PDR Utility")
+NL_ADD_RUNTIME_FLAGS(pdr_util)
+
+INSTALL(TARGETS pdr_util RUNTIME DESTINATION ${RYZOM_BIN_PREFIX} COMPONENT tools)

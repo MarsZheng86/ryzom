@@ -1,0 +1,5 @@
+EXPORTS
+	NLSOUND_createISoundDriverInstance
+	NLSOUND_interfaceVersion
+	NLSOUND_outputProfile
+	NLSOUND_getDriverType

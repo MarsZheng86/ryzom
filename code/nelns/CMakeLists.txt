@@ -1,0 +1,13 @@
+FIND_PACKAGE(MySQL)
+
+IF(WITH_NELNS_SERVER)
+	ADD_SUBDIRECTORY(admin_executor_service)
+	ADD_SUBDIRECTORY(admin_service)
+	ADD_SUBDIRECTORY(naming_service)
+	ADD_SUBDIRECTORY(login_service)
+	ADD_SUBDIRECTORY(welcome_service)
+ENDIF()
+
+IF(WITH_NELNS_LOGIN_SYSTEM)
+	ADD_SUBDIRECTORY(login_system)
+ENDIF()
